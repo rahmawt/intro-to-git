@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+html {
+  line-height: 1.15;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+  background-color: #D2F6C5;
+}
+
+::-webkit-scrollbar-button body {
+  background: linear-gradient(170deg, rgba(27, 192, 63, 0.267));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: rgb(214, 218, 223);
+  overflow: hidden;
+  min-height: 100vh;
+}
+.App {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100vh;
+}
+
+.App h1 {
+  display: inline;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: black;
+}
+
+.addTodos {
+  display: flex;
+  justify-content: center;
+}
+
+.todo-input {
+  min-width: 15rem;
+  width: 40vw;
+  max-height: 2.5rem;
+  background-color: rgb(238, 243, 243);
+  border: black;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  align-self: center;
+}
+
+.todo-input :focus {
+  outline: none;
+  border: 3px solid #654;
+}
+
+.add-btn {
+  margin: 2rem;
+  background-color: #86A789;
+  color: rgb(5, 5, 5);
+  border-radius: 30%;
+  border: 3px rgb(26, 18, 18);
+  font-size: 1.5rem;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  box-shadow: 2px 4px 10px #272727;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-btn:focus {
+  outline: none;
+}
+
+.display {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.display .buttons {
+  margin-bottom: 2rem;
+}
+
+.display .buttons button {
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  background-color: #86A789;
+}
+
+.display .buttons button:focus {
+  outline: none;
+
+}
+
+.display .buttons button:not(:last-child) {
+  margin-right: 1rem;
+}
+.display ul {
+  list-style: none;
+  display: flex;
+  align-self: flex-start;
+  flex-wrap: wrap;
+  margin-left: 5%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background: #557C55;
+  margin: 0 1rem 1rem 0;
+  height: 12rem;
+  width: 18rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  flex: 1;
+}
+
+.card textarea{
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: none;
+  background-color:rgb(242, 242, 245);
+  color: rgb(9, 10, 10);
+  height: 70%;
+
+}
+
+.card .btns{
+  border-radius: 12rem;
+  display: flex;
+  background-color: #557C55;
+  justify-content: center;
+}
+
+.card .btns button{
+  display:flex;
+  padding: 4px;
+  margin-right: 16px;
+  margin-top: 8px;
+  width: 2rem;
+  height: 2rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 80%;
+}
+
+.completed{
+  position: absolute;
+  right: 0.3rem;
+  top: 0.3rem;
+  background-color: aqua;
+  border: 2px solid black;
+  color: aliceblue;
+  font-size: 0.8rem;
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+}
